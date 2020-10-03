@@ -1,0 +1,35 @@
+<!DOCTYPE html>    
+<html>    
+<head>    
+    <title>Login Form</title>    
+    <link rel="stylesheet" type="text/css" href="css/style.css">    
+</head>    
+<body>    
+    <h2>Login Page</h2><br>    
+    <div class="login">    
+		<form id='formName' name='formName' onsubmit='redirect();return false;'>
+            <input type='text' id='userInput' name='userInput' value='' placeholder="CodeID">
+            <input type='submit' name='submit' value='Submit'>
+        </form>
+
+        <script type='text/javascript'>
+        function redirect() {
+           var input = document.getElementById('userInput').value.toLowerCase();
+            switch(input) {
+                case '1111':
+                    window.location.replace('3.html');
+                    break;
+                case 'keyword2':
+                    window.location.replace('page2.html');
+                    break;
+                default:
+                    window.location.replace('error.html');
+                    break;
+            }
+
+
+        }
+        </script>  
+</div>    
+</body>    
+</html> 
