@@ -18,7 +18,18 @@
 	  <input type='submit' name='submit' value='Submit' class="submit">           
                 
     </div>
-     
+     	  <script>
+		function myFunction() {
+		var x = document.getElementById("myInput");
+		if (x.type === "password") {
+			x.type = "text";
+		} 
+		else {
+			x.type = "password";
+		}
+	  }
+	  </script>
+
 	<script type='text/javascript'>
         function redirect() {
            var input = document.getElementById('userInput').value.toLowerCase();
@@ -33,16 +44,6 @@
 
         }
         </script>  
-	  <script>
-		  function myFunction() {
-    var x = document.getElementById("myInput");
-    if (x.type === "password") {
-        x.type = "text";
-    } else {
-        x.type = "password";
-    }
-}
-	  </script>
 </body>
 
 </html>
