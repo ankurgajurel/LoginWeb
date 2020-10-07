@@ -13,7 +13,7 @@
   <div class="main" id='formName' name='formName' onsubmit='redirect();return false;'>
     <p class="sign" align="center">Sign in</p>
     <form class="form1">
-      <input class="un " type="text" align="center" placeholder="Username" id="userInput">
+      <input class="un " type="text" align="center" placeholder="CodeID" id="userInput">
 	  <input type='submit' name='submit' value='Submit' class="submit">           
                 
     </div>
@@ -22,7 +22,7 @@
         function redirect() {
            var input = document.getElementById('userInput').value.toLowerCase();
             switch(input) {
-                case '1111':
+                case 'saalakhate':
                     window.location.replace('https://dazzling-easley-a5ce0f.netlify.app/other.html');
                     break;
 				        default:
